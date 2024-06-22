@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HR.Master.cs" Inherits="Z.HR" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto">
+            <h1 class="text-3xl">Human Resources Management System</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="HRHome.aspx" class="hover:underline">Home</a></li>
+                    <li><a href="EmployeeManagement.aspx" class="hover:underline">Employee Management</a></li>
+                    <li><a href="EmployeeEvaluation.aspx" class="hover:underline">Recruitment Evaluation</a></li>
+                    <li><a href="EmployeeAssignment.aspx" class="hover:underline">Employee Assignment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="flex-grow container mx-auto p-4">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </main>
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2024 Human Resources Management System</p>
+    </footer>
+</body>
+</html>
